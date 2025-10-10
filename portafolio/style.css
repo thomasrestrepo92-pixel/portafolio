@@ -1,0 +1,392 @@
+/* Estilos Generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #800080;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Estilos Header */
+header {
+  background: #ff6600;
+  color: #39FF14;
+  padding: 20px 40px;
+  display: flex; /* Organizar elementos de manera horizontal */
+  justify-content: space-between; /* Genera un espacio entre elementos */
+  align-items: center; /* Centrar elementos verticalmente */
+  position: sticky; /* Fija del Header */
+  top: 0;
+  z-index: 1000; /* Asegura de que el elemento este siempre en la posicion incial */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #39FF14;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover {
+  color: #39FF14;
+}
+
+/* Estilos Seccion Inicio */
+#inicio {
+  text-align: center;
+  padding: 80px 20px;
+  color: #000;
+  background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, #800080(252, 176, 69, 1) 100%);
+} 
+
+#inicio h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#inicio img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 6px solid #000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#inicio p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+#inicio button {
+  display: inline-block;
+  padding: 14px 28px;
+  margin-top: 20px;
+  font-size: 18px;
+  background: #6d594b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#inicio button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#inicio button:hover {
+  background: #800080;
+}
+
+/* Seccion Servicios */
+#servicios {
+  padding: 60px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+#servicio h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.servicio {
+  background: #F5F7FA;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 230px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.servicio h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #ff6600;
+}
+
+.servicio p {
+  font-size: 15px;
+  color: #333;
+}
+
+.servicio img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 40%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección Proyectos */
+#proyectos {
+  padding: 80px 40px;
+  background: #F5F7FA;
+  text-align: center;
+}
+
+#Proyecto h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.Proyecto {
+  background: #fff;
+  border-radius: 30px;
+  padding: 50px 40px;
+  margin: 15px;
+  display: inline-block;
+  width: 230px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Proyecto img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 40%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Proyecto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.Proyecto h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #ff6600;
+}
+
+/* Sección habilidades */
+#habilidades {
+  padding: 80px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+#habilidad h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.habilidad {
+  background: #fff;
+  border-radius: 30px;
+  padding: 50px 40px;
+  margin: 15px;
+  display: inline-block;
+  width: 230px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habilidad img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 40%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.habilidad:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.habilidad h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #ff6600;
+}
+
+/* Sección Testimonios */
+#Testimonios {
+  padding: 80px 40px;
+  background: #F5F7FA;
+  text-align: center;
+}
+
+#Testimonio h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.Testimonio {
+  background: #fff;
+  border-radius: 30px;
+  padding: 50px 40px;
+  margin: 15px;
+  display: inline-block;
+  width: 230px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Testimonio img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 40%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Testimonio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.Testimonio h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #ff6600;
+}
+
+/* Secccion Contacto */
+#contacto {
+  background: #fff;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input, textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, textarea:focus {
+  border: 1px solid #ff6600;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(235, 99, 8, 0.4);
+}
+
+form button {
+  padding: 14px;
+  font-size: 18px;
+  background: #800080;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #800080;
+}
+
+/* Seccion Footer o Pié de Página */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+footer .sociales {
+  margin-bottom: 15px;
+}
+
+footer .sociales a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+footer .sociales a:hover {
+  color: #800080;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+  }
+
+  #servicios .servicio, #proyectos .proyecto {
+      width: 100%;
+      max-width: 300px;
+  }
+}
